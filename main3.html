@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEESU_PORFORLIO</title>
+    <style>
+        @font-face {
+            font-family: 'NEXON';
+            src: url('NEXONLv1GothicLight.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Maglony';
+            src: url(' MaglonyFreeVersionRegular.ttf') format('truetype');
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        .ABOUT:hover {
+            background-image: url("1.JPG");
+            background-size: cover;
+        }
+
+        .PROJECTS:hover {
+            background-image: url("8.JPG");
+            background-size: cover;
+        }
+
+        .PHOTOS:hover {
+            background-image: url("6.JPG");
+            background-size: cover;
+        }
+
+        .body {
+            width: 100%;
+            height: 4800px;
+        }
+
+        .ABOUT {
+            background-color: #c5e1a5;
+            width: 33%;
+            height: 800px;
+            float: left;
+            /* display: flex; */
+            text-decoration: none;
+        }
+
+        .PROJECTS {
+            background-color: #f8ffd7;
+            width: 33%;
+            height: 800px;
+            float: left;
+            /* display: flex; */
+            text-decoration: none;
+        }
+
+        .PHOTOS {
+            background-color: #94af76;
+            width: 33%;
+            height: 800px;
+            float: left;
+            /* display: flex; */
+            text-decoration: none;
+        }
+
+        h1 {
+            font-family: 'Maglony';
+            font-size: 48px;
+            text-align: center;
+            margin: 320px auto 30px;
+            color: #262626;
+
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .ABOUT2 {
+            margin-top: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .ABOUT2 h2 {
+            font-size: 36px;
+            font-weight: 700px;
+            font-family: 'Maglony';
+        }
+
+        .about-list {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 1064px;
+            height: 280px;
+            background-color: #c5e1a5;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 56px;
+            padding-left: 60px;
+
+
+        }
+
+        #list {
+            list-style-type: none;
+        }
+
+        #list li {
+            float: left;
+            margin-right: 60px;
+            font-family: 'Maglony';
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #606060;
+
+        }
+
+        .PROJECTS2 {
+            margin-top: 80px;
+            padding-top: 80px;
+            width: 100%;
+            height: 1412px;
+            background-color: #f8ffd7;
+        }
+
+        .PROJECTS2 h2 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700px;
+            font-family: 'Maglony';
+        }
+
+        .project {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 862px;
+            height: 269px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 32px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .project img {
+            width: 606px;
+            height: 269px;
+        }
+
+        .project p {
+            padding-left: 48px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+
+            width: 220px;
+            height: 196px;
+            font-weight: 400px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #6E7683;
+        }
+
+        .project a {
+            text-decoration: none;
+            color: #94af76;
+        }
+
+        .project1 {
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 862px;
+            height: 269px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 32px;
+            background-color: #EEEEEE;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        }
+
+        .project1 img {
+            width: 606px;
+            height: 269px;
+        }
+
+        .project1 p {
+            padding-left: 48px;
+            padding-top: 32px;
+
+            padding-bottom: 32px;
+            width: 220px;
+            height: 196px;
+            font-weight: 400px;
+            font-size: 14px;
+            line-height: 24px;
+            color: #6E7683;
+        }
+
+        .PHOTOS2 {
+            margin-top: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+            text-align: center;
+            padding-top: 80px;
+            width: 100%;
+            height: 1400px;
+            background-color: #94af76;
+        }
+
+        .PHOTOS2 h2 {
+            font-size: 36px;
+            font-weight: 700px;
+            font-family: 'Maglony';
+        }
+
+        .photos-list {
+            width: 890px;
+            margin-top: 32px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .product {
+            text-align: center;
+            width: 236px;
+            display: block;
+
+            text-decoration: none;
+            float: left;
+
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .photos-list img {
+            width: 236px;
+            object-fit: cover;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding-top: 80px;
+            margin-bottom: 0px;
+            background-color: black;
+            height: 200px;
+        }
+
+        .footer a {
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="ABOUT">
+        <h1>ABOUT</h1>
+    </a>
+
+    <a href="main2.html" class="PROJECTS">
+        <h1>PROJECTS</h1>
+    </a>
+
+    <a href="main3.html" class="PHOTOS">
+        <h1>PHOTOS</h1>
+    </a>
+    <div class="clearfix"></div>
+    <!-- 
+    <div class="ABOUT2" id="ABOUT2">
+        <h2>ABOUT JO HEE SU</h2>
+    </div>
+
+    <div class="about-list">
+        <ul id="list">
+
+            <li>BIRTH<br><br><br>2000.09.04</li>
+            <li>ADDRESS<br><br><br>Seoul</li>
+            <li>EMAIL<br><br><br>heesu2303@naver.com</li>
+            <li>ACADEMIC<br><br><br>Media Design Engineering, TUK</li>
+            <div class="clearfix"></div>
+        </ul>
+
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="PROJECTS2" id="PROJECTS2">
+        <h2>PROJECTS</h2>
+
+        <div class="project1">
+            <img src="p1.jpg">
+            <p>#Card News 제작<br><br>
+                사진전을 주제로 통일성있는 레이아웃을 주려하였습니다.
+                관련된 이미지와 텍스트 배치로 강조를 주었습니다. 기존의 카드뉴스와는 다른 무드를 보여줍니다.</p>
+
+        </div>
+        <div class="project">
+            <img src="p2.png">
+            <p>#App Icon 제작<br><br>
+                예스24의 모바일 앱 아이콘 제작입니다. 색감과 라운드의 통일감을 주어 디자인하려 하였습니다. 색의 대비를 명확하게 하려고 하였습니다. </p>
+        </div>
+
+        <div class="project">
+            <img src="p3.jpg">
+            <p>#영상 공모전 입상<br><br>
+                미술감독으로 참여한 서울특별시건강가정지원센터에서 주관한 2021 그래서 가족이지 영상 공모전에서 최우수상을 수상했습니다. 그밖에도 다른 영상 공모전에 참여하고 있습니다.<br><a
+                    href="https://www.youtube.com/watch?v=P7waXel4UEk">보러가기</a></p>
+        </div>
+        <div class="project">
+            <img src="p4.jpg">
+            <p>#Interview Book<br><br>
+                크러쉬, 로꼬,구원찬 등 유명 가수들의 앨범아트를 제작했던 ENTFNUN과의 인터뷰를 진행했습니다.존경하는 아트디렉터와의 뜻깊은 인터뷰였습니다. <br><a
+                    href="https://blog.naver.com/heesu2303/222180280890">보러가기</a></p>
+        </div>
+    </div> -->
+
+    <div class="PHOTOS2" id="PHOTOS2">
+        <h2>PHOTOS</h2>
+        <div class="photos-list">
+            <img src="1.jpg">
+            <img src="2.jpg">
+            <img src="4.jpg">
+            <img src="9.jpg">
+            <img src="6.jpg">
+            <img src="3.jpg">
+            <img src="5.jpg">
+            <img src="7.jpg">
+            <img src="8.jpg">
+        </div>
+
+        <div class="footer">
+
+            <a href="https://linktr.ee/heezuku">
+                <img src="https://img.icons8.com/color/480/linktree.png" height="20">
+            </a>
+            <a href="https://www.instagram.com/heezuku/">
+                <img src="https://bakey.codeit.kr/files/629/images/instagram.png" height="20">
+            </a>
+            <a href="https://www.youtube.com/channel/UC4P_JOd8o_hoVO2QluwX4zA">
+                <img src="https://2.bp.blogspot.com/-R6Z1Gg_e2kA/U3wyHkqRM3I/AAAAAAAABok/H2NwSCSH4ag/s1600/YouTube-icon-dark.png"
+                    height="20">
+            </a>
+
+        </div>
+</body>
+
+</html>
